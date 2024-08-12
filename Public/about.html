@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/about.css">
+</head>
+<body>
+    <nav>
+        <ul class="navigationbar">
+            <li class="exit" onclick="hideNavigationbar()"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="x bi bi-x-lg" viewBox="0 0 16 16">
+                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/></svg></a></li>
+                <div class="centerit">
+            <li class="exit2"><a href="../index.html">Home</a></li>
+            <li class="exit2"><a href="./about.html">About</a></li>
+            <li class="exit2"><a href="./work.html">Work</a></li>
+            <li class="exit2"><a href="./journal.html">Journal</a></li>
+            <li class="exit2"><a href="./contact.html">Contact</a></li>
+            <li class="exit2"><a href="./bts.html">BTS</a></li>
+                </div>
+        </ul>
+        <ul>
+            <li class="hideonMobile exit3"><a href="../index.html">Home</a></li>
+            <li class="hideonMobile exit3"><a href="./about.html">About</a></li>
+            <li class="hideonMobile exit3"><a href="./work.html">Work</a></li>
+            <li class="hideonMobile exit3"><a href="./journal.html">Journal</a></li>
+            <li class="hideonMobile exit3"><a href="./contact.html">Contact</a></li>
+            <li class="hideonMobile exit3"><a href="./bts.html">BTS</a></li>
+            <li class="exit menu-button" onclick=showNavigationbar()><a href="#"><svg class="svg" xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+    <div class="aboutmebaby">
+        <div class="aboutmebaby-text">
+            <h1>Hi, I'm Simon Luckhoff</h1>
+            <p class="pp">By day an avid car photographer and by night a wannabe coder. <br><br>
+                My passion lays with cars ever since I was a little boy. Later on in High School I was exposed to taking photos
+                and my love for photography began. Merging the two seemed like the right thing to do. 
+                <br><br>
+                From 2021 to 2023 I completed my Bachelors degree in Visual Communication, majoring in Art Direction. Ever since 
+                I can remember, I took on freelance jobs. In 2021 I began work for The Archive Automotive.
+                <br><br>
+                My life completely changed, I went from a little boy taking photos of his dog to taking photos of some of the most
+                rare cars in South Africa.
+                <br><br>
+                Recently I began this coding journey (yes, I coded this website), something I was exposed to very briefly during
+                my degree. 
+            </p>
+            <div class="seemywork">
+                <a href="./work.html">See my work -></a>
+            </div>
+        </div>
+
+        <div class="aboutmebaby-img">
+            <img src="../Images/gtr.png">
+        </div>
+    </div>
+
+
+
+    <script>
+        function hideNavigationbar(){
+            const navigationbar = document.querySelector('.navigationbar')
+            navigationbar.style.display = 'none'
+        }
+
+        function showNavigationbar(){
+            const navigationbar = document.querySelector('.navigationbar')
+            navigationbar.style.display = 'flex'
+        }
+    </script>
+</body>
+</html>

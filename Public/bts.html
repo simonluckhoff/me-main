@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTS</title>
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="../styles/bts.css">
+    <link rel="stylesheet" href="../styles/lightbox.css ">
+</head>
+<body>
+    <nav>
+        <ul class="navigationbar">
+            <li class="exit" onclick="hideNavigationbar()"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="x bi bi-x-lg" viewBox="0 0 16 16">
+                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/></svg></a></li>
+                <div class="centerit">
+            <li class="exit2"><a href="../index.html">Home</a></li>
+            <li class="exit2"><a href="./about.html">About</a></li>
+            <li class="exit2"><a href="./work.html">Work</a></li>
+            <li class="exit2"><a href="./journal.html">Journal</a></li>
+            <li class="exit2"><a href="./contact.html">Contact</a></li>
+            <li class="exit2"><a href="./bts.html">BTS</a></li>
+                </div>
+        </ul>
+        <ul>
+            <li class="hideonMobile exit3"><a href="../index.html">Home</a></li>
+            <li class="hideonMobile exit3"><a href="./about.html">About</a></li>
+            <li class="hideonMobile exit3"><a href="./work.html">Work</a></li>
+            <li class="hideonMobile exit3"><a href="./journal.html">Journal</a></li>
+            <li class="hideonMobile exit3"><a href="./contact.html">Contact</a></li>
+            <li class="hideonMobile exit3"><a href="./bts.html">BTS</a></li>
+            <li class="exit menu-button" onclick=showNavigationbar()><a href="#"><svg class="svg" xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+    
+    <div class="bts_heading_main">
+        <div class="bts_heading">
+            <h1>Behind The Scenes</h1>
+            <p>Welcome to the snippets of everyday life, the scenes that sometimes don't see social media. 
+                <br><br>I've always believed that your best camera is the one in your hand, your phone.</p>
+        </div>
+    </div>
+
+    <div class="bts_container">
+        <div class="bts_gallery">
+            <a href="../Images/bts/bts, Simon, 2024.jpg" data-lightbox="iphone" data-title="M2 Steering Wheel  |  11/05/2024">
+                <img src="../Images/bts/bts, Simon, 2024.jpg">
+            </a>
+            <a href="../Images/bts/bts, Simon, 2024-2.jpg" data-lightbox="iphone" data-title="3RS Key  |  09/05/2024">
+                <img src="../Images/bts/bts, Simon, 2024-2.jpg">
+            </a>
+            <a href="../Images/bts/bts, Simon, 2024-3.jpg" data-lightbox="iphone" data-title="Turbo S Daylight  |  05/05/2024">
+                <img src="../Images/bts/bts, Simon, 2024-3.jpg">
+            </a>
+            <a href="../Images/bts/bts, Simon, 2024-4.jpg" data-lightbox="iphone" data-title="R34 Juiced 2  |  28/03/2024">
+                <img src="../Images/bts/bts, Simon, 2024-4.jpg">
+            </a>
+            <a href="../Images/bts/bts, Simon, 2024-5.jpg" data-lightbox="iphone" data-title="Selfie  |  11/03/2024">
+                <img src="../Images/bts/bts, Simon, 2024-5.jpg">
+            </a>
+            <a href="../Images/bts/bts, Simon, 2024-6.jpg" data-lightbox="iphone" data-title="812 GTS Top Spec  |  23/11/2023">
+                <img src="../Images/bts/bts, Simon, 2024-6.jpg">
+            </a>
+            <a href="../Images/bts/bts, Simon, 2024-7.jpg" data-lightbox="iphone" data-title="Park 'n Pizza  |  02/05/2023">
+                <img src="../Images/bts/bts, Simon, 2024-7.jpg">
+            </a>
+            <a href="../Images/bts/bts, Simon, 2024-8.jpg" data-lightbox="iphone" data-title="Editing Sessions  |  21/10/2023">
+                <img src="../Images/bts/bts, Simon, 2024-8.jpg">
+            </a>
+        </div>
+    </div>
+
+
+
+    <script src="../js/lightbox-plus-jquery.js"></script>
+
+    <script>
+        function hideNavigationbar(){
+            const navigationbar = document.querySelector('.navigationbar')
+            navigationbar.style.display = 'none'
+        }
+
+        function showNavigationbar(){
+            const navigationbar = document.querySelector('.navigationbar')
+            navigationbar.style.display = 'flex'
+        }
+    </script>
+</body>
+</html>
