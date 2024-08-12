@@ -1,7 +1,10 @@
 /* GLOBAL */
 
 body{
-    background-color: #212121;
+    /* background-color: #212121; */
+    /* background-image: linear-gradient(to right, #8AEDF6 , #60A2F5); */
+    background-color: linear-gradient(to right, #8AEDF6 , #60A2F5);
+
 }
 
 *{
