@@ -16,7 +16,14 @@
     background-attachment: fixed;
     background-size: cover;
     height: 95.5vh;
+    
 }
+
+/* .whoamitext3{
+    backdrop-filter: blur(500px);
+    border-radius: 5px;
+    padding: 8px;
+} */
 
 .whoamitext{
     /* padding: 120px 220px; */
