@@ -13,7 +13,8 @@
     align-items: center;
     justify-content: center;
     margin: 0% 3% 3% 3%;
-    gap: 50px;
+    /* gap: 50px; */
+    gap: 25px;
     padding-bottom: 15px;
 }
 
@@ -60,7 +61,8 @@
 
 .layout-recentwork .image__img{
     width: 100%;
-    max-width: 410px;
+    /* max-width: 410px; */
+    max-width: 400px;
     height: auto;
 }
 
