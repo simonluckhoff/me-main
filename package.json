@@ -1,0 +1,26 @@
+{
+	"name": "portfolio-website",
+	"version": "1.0.0",
+	"description": "A portfolio of my car photography work",
+	"main": "index.js",
+	"scripts": {
+		"lint": "eslint .",
+		"lint:script": "eslint . --fix",
+		"pretty": "npx prettier . --write",
+		"prepare": "husky"
+	},
+	"lint-staged": {
+		"**/*": "prettier --write --ignore-unknown"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@eslint/js": "^9.9.1",
+		"eslint": "^9.9.1",
+		"eslint-config-prettier": "^9.1.0",
+		"globals": "^15.9.0",
+		"husky": "^9.1.5",
+		"lint-staged": "^15.2.9",
+		"prettier": "3.3.3"
+	}
+}
