@@ -1,0 +1,30 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Login">
+	<form>
+		<label for="pswd">Enter your password: </label>
+		<input type="password" id="pswd" />
+		<input type="button" value="Submit" onclick="checkPswd();" />
+	</form>
+
+	<script type="text/javascript">
+		function checkPswd() {
+			var confirmPassword = "simon";
+			var password = document.getElementById("pswd").value;
+			if (password == confirmPassword) {
+				window.location = "welcome.html";
+			} else {
+				alert("Passwords do not match.");
+			}
+		}
+	</script>
+</Layout>
+
+<style>
+	form {
+		color: white;
+		padding-top: 20%;
+	}
+</style>

@@ -1,0 +1,148 @@
+---
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="997.2 GT3RS">
+	<div class="heading">
+		<h1>Porsche 997.2 GT3RS</h1>
+	</div>
+
+	<div class="gallery">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<img src="../../images/low_res/997 GT3RS/997 GT3RS, Simon, 2024-10.jpg" />
+					<img src="../../images/low_res/997 GT3RS/997 GT3RS, Simon, 2024-2.jpg" />
+					<img src="../../images/low_res/997 GT3RS/997 GT3RS, Simon, 2024-3.jpg" />
+					<img src="../../images/low_res/997 GT3RS/997 GT3RS, Simon, 2024-15.jpg" />
+					<img src="../../images/low_res/997 GT3RS/997 GT3RS, Simon, 2024-9.jpg" />
+				</div>
+
+				<div class="col">
+					<img src="../../images/low_res/997 GT3RS/997 GT3RS, Simon, 2024-4.jpg" />
+					<img src="../../images/low_res/997 GT3RS/997 GT3RS, Simon, 2024-5.jpg" />
+					<img src="../../images/low_res/997 GT3RS/997 GT3RS, Simon, 2024-6.jpg" />
+					<img src="../../images/low_res/997 GT3RS/997 GT3RS, Simon, 2024-7.jpg" />
+					<img src="../../images/low_res/997 GT3RS/997 GT3RS, Simon, 2024-8.jpg" />
+				</div>
+
+				<div class="col">
+					<img src="../../images/low_res/997 GT3RS/997 GT3RS, Simon, 2024-11.jpg" />
+					<img src="../../images/low_res/997 GT3RS/997 GT3RS, Simon, 2024-12.jpg" />
+					<img src="../../images/low_res/997 GT3RS/997 GT3RS, Simon, 2024-13.jpg" />
+					<img src="../../images/low_res/997 GT3RS/997 GT3RS, Simon, 2024-14.jpg" />
+				</div>
+			</div>
+		</div>
+	</div>
+</Layout>
+
+<style>
+	/* .heading{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 45px;
+} 
+
+.porsche{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 0px 35px 35px 35px;
+    width: 100%;
+}
+
+.porsche img{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+@media(max-width: 800px){
+    .layout-latestwork{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 30px 30px 30px;
+        gap: 35px;
+    }
+
+    .image{
+        width: 100%;
+        height: auto;
+    }
+
+    .layout-recentwork{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 30px 30px 30px;
+        gap: 35px;
+        background-color: black;
+    }
+} */
+
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	.heading {
+		padding-top: 59px;
+	}
+
+	.heading h1 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: white;
+		padding: 2rem;
+		text-align: center;
+	}
+
+	.gallery {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 10px 100px;
+	}
+
+	.gallery img {
+		width: 100%;
+		height: auto;
+	}
+
+	.container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.row {
+		display: flex;
+		gap: 30px;
+	}
+
+	.col {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
+
+	@media screen and (max-width: 800px) {
+		.row {
+			flex-direction: column;
+		}
+
+		.gallery {
+			margin: 10px 50px;
+		}
+	}
+</style>

@@ -1,9 +1,13 @@
 {
 	"name": "portfolio-website",
-	"version": "1.0.0",
-	"description": "A portfolio of my car photography work",
-	"main": "index.js",
+	"type": "module",
+	"version": "0.0.1",
 	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro check && astro build",
+		"preview": "astro preview",
+		"astro": "astro",
 		"lint": "eslint .",
 		"lint:script": "eslint . --fix",
 		"pretty": "npx prettier . --write",
@@ -12,8 +16,11 @@
 	"lint-staged": {
 		"**/*": "prettier --write --ignore-unknown"
 	},
-	"author": "",
-	"license": "ISC",
+	"dependencies": {
+		"astro": "^4.15.1",
+		"@astrojs/check": "^0.9.3",
+		"typescript": "^5.5.4"
+	},
 	"devDependencies": {
 		"@eslint/js": "^9.9.1",
 		"eslint": "^9.9.1",

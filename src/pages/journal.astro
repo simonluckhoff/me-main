@@ -1,0 +1,125 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Journal">
+	<div class="journal">
+		<div class="insidejournal">
+			<div class="thepursuitofbuilding">
+				<a href="/journals/pursuitofbuilding.html">
+					<img class="pursuit-img" src="../images/journal/pursuit.jpg" />
+					<h1>The pursuit of building</h1>
+					<p>
+						19/05/24 <br />
+						It's about the process rather than the destination
+					</p>
+				</a>
+			</div>
+			<div class="thepursuitofbuilding">
+				<img class="pursuit-img" src="../images/journal/1.jpg" />
+				<h1>Meeting your heroes</h1>
+				<p>
+					19/05/24 <br />
+					It's about the process rather than the destination
+				</p>
+			</div>
+			<div class="thepursuitofbuilding">
+				<img class="pursuit-img" src="../images/journal/2.jpg" />
+				<h1>New Experiences</h1>
+				<p>
+					19/05/24 <br />
+					It's about the process rather than the destination
+				</p>
+			</div>
+			<div class="thepursuitofbuilding">
+				<img class="pursuit-img" src="../images/journal/3.jpg" />
+				<h1>Love what you do</h1>
+				<p>
+					19/05/24 <br />
+					It's about the process rather than the destination
+				</p>
+			</div>
+			<div class="thepursuitofbuilding">
+				<img class="pursuit-img" src="../images/journal/4.jpg" />
+				<h1>Friends & Cars</h1>
+				<p>
+					19/05/24 <br />
+					It's about the process rather than the destination
+				</p>
+			</div>
+			<div class="thepursuitofbuilding">
+				<img class="pursuit-img" src="../images/journal/5.png" />
+				<h1>Sucker for a Sunset</h1>
+				<p>
+					19/05/24 <br />
+					It's about the process rather than the destination
+				</p>
+			</div>
+		</div>
+	</div>
+</Layout>
+
+<style>
+	.journal {
+		padding-top: 45px;
+	}
+
+	.journal h1,
+	p {
+		text-decoration: none;
+		color: white;
+	}
+
+	.journal h1 {
+		padding-top: 10px;
+	}
+
+	.journal a {
+		text-decoration: none;
+	}
+
+	.journal p {
+		padding: 5px 10px 10px 0px;
+	}
+
+	.journal .insidejournal {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		grid-column-gap: 59px;
+		grid-row-gap: 49px;
+		grid-auto-rows: min-content;
+		margin: 59px;
+	}
+
+	.thepursuitofbuilding img {
+		width: 100%;
+	}
+
+	.thepursuitofbuilding p,
+	h1 {
+		padding-left: 15px;
+	}
+
+	.thepursuitofbuilding:hover {
+		transform: scale(1.03);
+		transition: ease-out.2s;
+		background-color: #00adb5;
+	}
+
+	@media (max-width: 800px) {
+		.journal .insidejournal {
+			display: flex;
+			flex-direction: column;
+			margin: 40px;
+			grid-row-gap: 20px;
+		}
+		.journal h1 {
+			font-size: 20px;
+			text-decoration: none;
+		}
+		.journal p {
+			font-size: 10px;
+			text-decoration: none;
+		}
+	}
+</style>

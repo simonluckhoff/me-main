@@ -1,0 +1,107 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="BTS">
+	<div class="bts_heading_main">
+		<div class="bts_heading">
+			<h1>Behind The Scenes</h1>
+			<p>
+				Welcome to the snippets of everyday life, the scenes that sometimes don't see social media.
+				<br /><br />I've always believed that your best camera is the one in your hand, your phone.
+			</p>
+		</div>
+	</div>
+
+	<div class="bts_container">
+		<div class="bts_gallery">
+			<a href="../images/bts/bts1" data-lightbox="iphone" data-title="M2 Steering Wheel  |  11/05/2024">
+				<img src="../images/bts/bts1.jpg" />
+			</a>
+			<a href="../images/bts/bts2.jpg" data-lightbox="iphone" data-title="3RS Key  |  09/05/2024">
+				<img src="../images/bts/bts2.jpg" />
+			</a>
+			<a href="../images/bts/bts3.jpg" data-lightbox="iphone" data-title="Turbo S Daylight  |  05/05/2024">
+				<img src="../images/bts/bts3.jpg" />
+			</a>
+			<a href="../images/bts/bts4.jpg" data-lightbox="iphone" data-title="R34 Juiced 2  |  28/03/2024">
+				<img src="../images/bts/bts4.jpg" />
+			</a>
+			<a href="../images/bts/bts5.jpg" data-lightbox="iphone" data-title="Selfie  |  11/03/2024">
+				<img src="../images/bts/bts5.jpg" />
+			</a>
+			<a href="../images/bts/bts6.jpg" data-lightbox="iphone" data-title="812 GTS Top Spec  |  23/11/2023">
+				<img src="../images/bts/bts6.jpg" />
+			</a>
+			<a href="../images/bts/bts7.jpg" data-lightbox="iphone" data-title="Park 'n Pizza  |  02/05/2023">
+				<img src="../images/bts/bts7.jpg" />
+			</a>
+			<a href="../images/bts/bts8.jpg" data-lightbox="iphone" data-title="Editing Sessions  |  21/10/2023">
+				<img src="../images/bts/bts8.jpg" />
+			</a>
+		</div>
+	</div>
+
+	<!-- <script is:inline src="/lightbox-plus-jquery.js"></script> -->
+</Layout>
+
+<style>
+	/* @import url("../styles/lightbox.css"); */
+
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: 0;
+	}
+
+	.bts_heading_main {
+		padding-top: 85px;
+	}
+
+	.bts_heading h1,
+	p {
+		color: white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.bts_heading p {
+		/* padding-top: 10px;
+    padding-bottom: 10px; */
+		text-align: center;
+		line-height: 20px;
+		padding: 13px 33px 5px 33px;
+	}
+
+	.bts_container {
+		width: 100%;
+		/* min-height: 100vh; */
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		/* padding: 50px 8%; */
+	}
+
+	.bts_gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		grid-gap: 30px;
+		padding: 30px;
+	}
+
+	.bts_gallery img {
+		width: 100%;
+	}
+
+	.bts_gallery img:hover {
+		transform: scale(1.03);
+		transition: ease-out.2s;
+	}
+
+	/* @media(max-width: 800px){
+    .bts_heading_main{
+        padding-top: 8%;
+    }
+} */
+</style>

@@ -1,0 +1,191 @@
+---
+
+---
+
+<nav>
+	<ul class="mobile-navigation-menu">
+		<li id="closeMenu">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="26"
+				height="26"
+				fill="currentColor"
+				class="svg x bi bi-x-lg"
+				viewBox="0 0 16 16"
+			>
+				<path
+					d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+				></path>
+			</svg>
+		</li>
+		<div class="center">
+			<li><a href="/index.html">Home</a></li>
+			<li>
+				<a href="/about.html">About</a>
+			</li>
+			<li><a href="/work.html">Work</a></li>
+			<li>
+				<a href="/journal.html">Journal</a>
+			</li>
+			<li>
+				<a href="/contact.html">Contact</a>
+			</li>
+			<li><a href="/bts.html">BTS</a></li>
+		</div>
+	</ul>
+	<ul>
+		<li class="hide-on-mobile link">
+			<a href="./index.html">Home</a>
+		</li>
+		<li class="hide-on-mobile link">
+			<a href="/about.html">About</a>
+		</li>
+		<li class="hide-on-mobile link">
+			<a href="/work.html">Work</a>
+		</li>
+		<li class="hide-on-mobile link">
+			<a href="/journal.html">Journal</a>
+		</li>
+		<li class="hide-on-mobile link">
+			<a href="/contact.html">Contact</a>
+		</li>
+		<li class="hide-on-mobile link">
+			<a href="/bts.html">BTS</a>
+		</li>
+		<li id="openMenu" class="mobile-menu-button">
+			<svg
+				class="svg"
+				xmlns="http://www.w3.org/2000/svg"
+				width="26"
+				height="26"
+				viewBox="0 96 960 960"
+				width="26"
+			>
+				<path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"></path>
+			</svg>
+		</li>
+	</ul>
+</nav>
+
+<script>
+	const closeMenuBtn = document.getElementById("closeMenu");
+	closeMenuBtn?.addEventListener("click", () => {
+		hideNavigationBar();
+	});
+
+	const openMenuBtn = document.getElementById("openMenu");
+	openMenuBtn?.addEventListener("click", () => {
+		showNavigationBar();
+	});
+
+	function hideNavigationBar() {
+		const navigationBar = document.querySelector(".mobile-navigation-menu");
+		if (navigationBar) if (navigationBar) navigationBar.style.display = "none";
+	}
+
+	function showNavigationBar() {
+		const navigationBar = document.querySelector(".mobile-navigation-menu");
+		if (navigationBar) if (navigationBar) navigationBar.style.display = "flex";
+	}
+</script>
+
+<style>
+	nav {
+		background-color: black;
+		opacity: 1;
+
+		ul {
+			width: 100%;
+			list-style: none;
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+
+			position: fixed;
+			top: 0;
+			z-index: 1;
+			background-color: black;
+
+			a {
+				font-family: monospace;
+				text-decoration: none;
+				font-size: 1rem;
+				color: white;
+				padding: 17px;
+
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			a:hover {
+				background-color: #00adb5;
+				transform: scale(1.03);
+				transition: ease-out.2s;
+			}
+
+			.link {
+				padding: 0 15px;
+			}
+			.x {
+				height: 27px;
+			}
+		}
+	}
+
+	.mobile-navigation-menu {
+		display: none;
+		position: fixed;
+		top: 0;
+		right: 0;
+		height: 100vh;
+		width: 250px;
+		z-index: 999;
+		background-color: black;
+		color: white;
+		backdrop-filter: blur(10px);
+		display: none;
+		flex-direction: column;
+		align-items: flex-end;
+		justify-content: flex-start;
+
+		.center {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+		}
+	}
+
+	.mobile-menu-button {
+		display: none;
+	}
+
+	.svg {
+		fill: white;
+	}
+
+	.svg:hover {
+		cursor: pointer;
+	}
+
+	@media (max-width: 800px) {
+		.hide-on-mobile {
+			display: none;
+		}
+		.mobile-menu-button {
+			display: block;
+		}
+		#openMenu,
+		#closeMenu {
+			padding: 0 30px;
+		}
+	}
+
+	@media (max-width: 400px) {
+		.mobile-navigation-menu {
+			width: 100%;
+		}
+	}
+</style>
