@@ -1,10 +1,19 @@
 ---
+import Image from "astro/components/Image.astro";
 import Layout from "../layouts/Layout.astro";
+import bts1 from "../images/bts/bts1.jpg";
+import bts2 from "../images/bts/bts2.jpg";
+import bts3 from "../images/bts/bts3.jpg";
+import bts4 from "../images/bts/bts4.jpg";
+import bts5 from "../images/bts/bts5.jpg";
+import bts6 from "../images/bts/bts6.jpg";
+import bts7 from "../images/bts/bts7.jpg";
+import bts8 from "../images/bts/bts8.jpg";
 ---
 
 <Layout title="BTS">
-	<div class="bts_heading_main">
-		<div class="bts_heading">
+	<div class="heading-wrapper">
+		<div class="heading-content">
 			<h1>Behind The Scenes</h1>
 			<p>
 				Welcome to the snippets of everyday life, the scenes that sometimes don't see social media.
@@ -13,33 +22,15 @@ import Layout from "../layouts/Layout.astro";
 		</div>
 	</div>
 
-	<div class="bts_container">
-		<div class="bts_gallery">
-			<a href="../images/bts/bts1" data-lightbox="iphone" data-title="M2 Steering Wheel  |  11/05/2024">
-				<img src="../images/bts/bts1.jpg" />
-			</a>
-			<a href="../images/bts/bts2.jpg" data-lightbox="iphone" data-title="3RS Key  |  09/05/2024">
-				<img src="../images/bts/bts2.jpg" />
-			</a>
-			<a href="../images/bts/bts3.jpg" data-lightbox="iphone" data-title="Turbo S Daylight  |  05/05/2024">
-				<img src="../images/bts/bts3.jpg" />
-			</a>
-			<a href="../images/bts/bts4.jpg" data-lightbox="iphone" data-title="R34 Juiced 2  |  28/03/2024">
-				<img src="../images/bts/bts4.jpg" />
-			</a>
-			<a href="../images/bts/bts5.jpg" data-lightbox="iphone" data-title="Selfie  |  11/03/2024">
-				<img src="../images/bts/bts5.jpg" />
-			</a>
-			<a href="../images/bts/bts6.jpg" data-lightbox="iphone" data-title="812 GTS Top Spec  |  23/11/2023">
-				<img src="../images/bts/bts6.jpg" />
-			</a>
-			<a href="../images/bts/bts7.jpg" data-lightbox="iphone" data-title="Park 'n Pizza  |  02/05/2023">
-				<img src="../images/bts/bts7.jpg" />
-			</a>
-			<a href="../images/bts/bts8.jpg" data-lightbox="iphone" data-title="Editing Sessions  |  21/10/2023">
-				<img src="../images/bts/bts8.jpg" />
-			</a>
-		</div>
+	<div class="gallery">
+		<Image src={bts1} alt="M2 Steering Wheel" />
+		<Image src={bts2} alt="3RS Key" />
+		<Image src={bts3} alt="Turbo S Daylight" />
+		<Image src={bts4} alt="R34 Juiced 2" />
+		<Image src={bts5} alt="Selfie" />
+		<Image src={bts6} alt="812 GTS Top Spec" />
+		<Image src={bts7} alt="Park 'n Pizza" />
+		<Image src={bts8} alt="Editing Sessions" />
 	</div>
 
 	<!-- <script is:inline src="/lightbox-plus-jquery.js"></script> -->
@@ -48,60 +39,61 @@ import Layout from "../layouts/Layout.astro";
 <style>
 	/* @import url("../styles/lightbox.css"); */
 
-	* {
-		margin: 0;
-		padding: 0;
-		box-sizing: 0;
-	}
-
-	.bts_heading_main {
+	.heading-wrapper {
 		padding-top: 85px;
 	}
 
-	.bts_heading h1,
-	p {
-		color: white;
-		display: flex;
-		justify-content: center;
-		align-items: center;
+	.heading-content {
+		h1,
+		p {
+			color: white;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		p {
+			text-align: center;
+			line-height: 20px;
+			padding: 1rem;
+		}
 	}
 
-	.bts_heading p {
-		/* padding-top: 10px;
-    padding-bottom: 10px; */
-		text-align: center;
-		line-height: 20px;
-		padding: 13px 33px 5px 33px;
-	}
-
-	.bts_container {
-		width: 100%;
-		/* min-height: 100vh; */
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		/* padding: 50px 8%; */
-	}
-
-	.bts_gallery {
+	.gallery {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 		grid-gap: 30px;
 		padding: 30px;
+
+		img {
+			object-fit: cover;
+			height: 340px;
+			width: 100%;
+		}
+
+		img:hover {
+			transform: scale(1.03);
+			transition: ease-out.2s;
+		}
 	}
 
-	.bts_gallery img {
-		width: 100%;
-	}
+	@media (max-width: 305px) {
+		.heading-wrapper {
+			padding-top: 55px;
 
-	.bts_gallery img:hover {
-		transform: scale(1.03);
-		transition: ease-out.2s;
-	}
+			.heading-content {
+				h1 {
+					font-size: 22px;
+				}
 
-	/* @media(max-width: 800px){
-    .bts_heading_main{
-        padding-top: 8%;
-    }
-} */
+				p {
+					padding: 10px;
+				}
+			}
+		}
+
+		.gallery {
+			padding: 10px;
+		}
+	}
 </style>

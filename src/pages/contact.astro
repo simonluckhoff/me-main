@@ -1,11 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Image from "astro/components/Image.astro";
+import contact from "../images/contact.jpg";
 ---
 
 <Layout title="Contact">
 	<div class="contact">
-		<div class="contactmebaby">
-			<div class="contact_text">
+		<div class="contact-content">
+			<div class="contact-text">
 				<h1>Contact</h1>
 				<ul>
 					<a href="https://www.instagram.com/simonluckhoff/?hl=en"><li>-> Instagram</li></a>
@@ -14,112 +16,81 @@ import Layout from "../layouts/Layout.astro";
 					<a href=""><li>-> simonluckhoff@gmail.com</li></a>
 				</ul>
 			</div>
-			<div class="contact_image">
-				<img src="../images/contact.jpg" />
+			<div class="contact-image">
+				<Image src={contact} alt="Contact photo" />
 			</div>
 		</div>
 	</div>
 </Layout>
 
 <style>
-	body {
-		height: 100vh;
-		width: auto;
-		/* background: linear-gradient(180deg, grey 50%, black 50%); */
-	}
-
 	.contact {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		width: auto;
-		/* margin-top: 7%; */
-		padding-top: 225px;
-
-		width: 100%;
-		height: auto;
+		height: calc(100vh - 49px);
+		margin-top: 49px;
 	}
 
-	.contactmebaby {
+	.contact-content {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		/* width: 100%; */
 		max-width: 800px;
-		/* height: auto; */
-		box-shadow: 0em 0em 1em 0.5em lightgray;
-		background-color: grey;
-	}
+		gap: 75px;
 
-	.contact_image {
-		max-width: 900px;
-		height: auto;
-	}
+		.contact-image {
+			img {
+				object-fit: cover;
+				height: 70vh;
+				width: 100%;
+			}
+		}
 
-	.contact_image img {
-		width: 100%;
-	}
+		.contact-text {
+			max-width: 300px;
+			height: auto;
+			padding: 40px;
 
-	.contact_text h1,
-	a {
-		color: white;
-		text-decoration: none;
-	}
+			h1,
+			a {
+				color: white;
+				text-decoration: none;
+			}
 
-	.contact_text {
-		width: 100%;
-		max-width: 300px;
-		height: auto;
-		padding: 40px;
-		background-color: grey;
-	}
+			h1 {
+				padding-bottom: 30px;
+				font-size: 4rem;
+			}
 
-	.contact_text h1 {
-		padding-bottom: 30px;
-		font-size: 4rem;
-	}
+			a:hover {
+				font-style: italic;
+				text-decoration: underline;
+			}
 
-	.contact_text ul {
-		padding-left: 2rem;
-	}
-
-	.contact_text a:hover {
-		font-style: italic;
-		text-decoration: underline;
-	}
-
-	.contact_text li {
-		list-style: none;
-		padding: 10px 10px 10px 0px;
-		display: flex;
-		align-items: flex-end;
+			li {
+				list-style: none;
+				padding: 10px 0;
+				display: flex;
+				align-items: flex-end;
+			}
+		}
 	}
 
 	@media (max-width: 800px) {
-		body {
-			background: none;
-			box-shadow: none;
-			background-color: #212121;
-		}
-
 		.contact {
-			padding: 70px 0px 30px 0px;
-		}
+			height: 100%;
+			padding: 2rem 1rem;
 
-		.contactmebaby {
-			display: flex;
-			flex-wrap: wrap;
-			box-shadow: none;
-			background-color: #212121;
-		}
+			.contact-content {
+				flex-direction: column;
+				gap: 35px;
 
-		.contact_image {
-			width: 30vh;
-		}
-
-		.contact_text {
-			padding-top: 5px;
-			background-color: #212121;
+				.contact-text {
+					padding: 0;
+					padding-bottom: 2rem;
+				}
+			}
 		}
 	}
 </style>

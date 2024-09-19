@@ -1,5 +1,7 @@
 ---
+import Image from "astro/components/Image.astro";
 import Layout from "../../layouts/Layout.astro";
+import pursuitofbuilding from "../../images/journal/pursuitofbuilding.jpg";
 ---
 
 <Layout title="Journal">
@@ -36,15 +38,10 @@ import Layout from "../../layouts/Layout.astro";
 			You’ll never know how it’ll pay off. <br /><br /><br /><br />
 
 			The link to my latest
-			<a
-				style="font-style: italic"
-				style="color: purple"
-				href="https://sims7878.github.io/vlokcars/"
-				target="_blank">website</a
-			>
+			<a style="font-style: italic" href="https://sims7878.github.io/vlokcars/" target="_blank">website</a>
 		</p>
 
-		<img class="codeee" src="../../images/journal/pursuitofbuilding.jpg" />
+		<Image src={pursuitofbuilding} alt="Pursuit of Building" />
 	</div>
 </Layout>
 
@@ -54,48 +51,47 @@ import Layout from "../../layouts/Layout.astro";
 		margin: 0 17%;
 		padding-top: 90px;
 		width: auto;
-	}
 
-	.writing h1,
-	p {
-		color: white;
-		text-decoration: none;
-		margin-bottom: 20px;
-	}
+		h1,
+		p {
+			color: white;
+			text-decoration: none;
+			margin-bottom: 20px;
+		}
 
-	.writing p {
-		font-size: 15px;
-		text-align: left;
-		padding-bottom: 45px;
-		max-width: fit-content;
-		hyphens: none;
-		line-height: 1.5em;
-	}
+		p {
+			font-size: 15px;
+			text-align: left;
+			padding-bottom: 45px;
+			max-width: fit-content;
+			hyphens: none;
+			line-height: 1.5em;
+		}
 
-	.writing a {
-		/* display: none; */
-		color: lightpink;
-		text-decoration: none;
-	}
+		a {
+			color: lightpink;
+			text-decoration: none;
+		}
 
-	.writing img {
-		width: 100%;
-		height: auto;
+		img {
+			width: 100%;
+			height: auto;
+		}
 	}
 
 	@media (max-width: 800px) {
 		.writing {
 			margin: 0 30px;
 			text-align: left;
-		}
 
-		.writing h1 {
-			font-size: 20px;
-			margin-bottom: 20px;
-		}
-		.writing p {
-			font-size: 12px;
-			hyphens: none;
+			h1 {
+				font-size: 20px;
+				margin-bottom: 20px;
+			}
+			p {
+				font-size: 12px;
+				hyphens: none;
+			}
 		}
 	}
 </style>

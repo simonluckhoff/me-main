@@ -1,12 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Image from "astro/components/Image.astro";
+import about from "../images/about.png";
 ---
 
 <Layout title="About">
-	<div class="aboutmebaby">
-		<div class="aboutmebaby-text">
+	<div class="about">
+		<div class="about-content">
 			<h1>Hi, I'm Simon Luckhoff</h1>
-			<p class="pp">
+			<p>
 				By day an avid car photographer and by night a wannabe coder. <br /><br />
 				My passion lays with cars ever since I was a little boy. Later on in High School I was exposed to taking
 				photos where my love for photography began. Merging the two only seemed like the appropriate thing to do.
@@ -20,86 +22,76 @@ import Layout from "../layouts/Layout.astro";
 				Recently I began this coding journey (yes, I coded this website), something I was exposed to very briefly
 				during my degree.
 			</p>
-			<div class="seemywork">
-				<a href="./work.html">See my work -></a>
-			</div>
+			<a href="./work.html">See my work -></a>
 		</div>
 
-		<div class="aboutmebaby-img">
-			<img src="../images/about.png" />
+		<div class="image-container">
+			<Image src={about} alt="About Simon" />
 		</div>
 	</div>
 </Layout>
 
 <style>
-	.aboutmebaby {
+	.about {
+		--navbar-height: 49px;
+
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		width: 0 auto;
-		margin: 4%;
+		height: calc(100vh - var(--navbar-height));
+		margin-top: var(--navbar-height);
 		gap: 75px;
-		padding-top: 50px;
 	}
 
-	/* .aboutmebaby-text{
-    text-align: justify;
-} */
+	.about-content {
+		h1,
+		p {
+			color: white;
+			max-width: 400px;
 
-	.aboutmebaby-text h1,
-	.pp {
-		color: white;
-		max-width: 400px;
-
-		display: flex;
-		justify-content: flex-start;
-		align-items: flex-start;
-		line-height: 1.5em;
-	}
-
-	.aboutmebaby-text h1 {
-		padding-bottom: 15px;
-	}
-
-	.aboutmebaby-img img {
-		max-width: 500px;
-		display: flex;
-	}
-
-	.seemywork a {
-		color: white;
-		text-decoration: none;
-		font-style: italic;
-		padding-top: 59px;
-		/* padding-right: 75px;
-    padding-bottom: 25px; */
-
-		display: flex;
-		justify-content: flex-end;
-		align-items: center;
-		width: auto;
-	}
-
-	@media (max-width: 1230px) {
-		.aboutmebaby {
 			display: flex;
+			justify-content: flex-start;
+			align-items: flex-start;
+			line-height: 1.5em;
+		}
+
+		h1 {
+			padding-bottom: 15px;
+		}
+
+		a {
+			color: white;
+			text-decoration: none;
+			font-style: italic;
+			padding-top: 59px;
+			display: flex;
+			justify-content: flex-end;
+		}
+	}
+
+	.image-container {
+		img {
+			object-fit: cover;
+			height: 70vh;
+			width: 100%;
+		}
+	}
+
+	@media (max-width: 1050px) {
+		.about {
 			flex-direction: column;
+			height: 100%;
+			padding: 2rem 1rem;
 			gap: 35px;
-			padding: 20px;
-			padding-top: 75px;
-		}
 
-		.aboutmebaby h1 {
-			font-size: 20px;
-		}
+			h1 {
+				font-size: 20px;
+			}
 
-		.aboutmebaby-img img {
-			width: 30vh;
-		}
-
-		.seemywork a {
-			padding-right: 20px;
-			padding-top: 40px;
+			a {
+				padding-right: 20px;
+				padding-top: 40px;
+			}
 		}
 	}
 </style>
