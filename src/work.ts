@@ -151,7 +151,7 @@ export const recentWork = [
 		title: "Bentley Continental GT Number 9",
 	},
 	{
-		href: "/cars/15 - Toyota GR Corolla .html",
+		href: "/cars/15 - Toyota GR Corolla.html",
 		image: recent17,
 		title: "Toyota GR Corolla",
 	},
