@@ -1,36 +1,6 @@
 ---
-import Image from "astro/components/Image.astro";
 import Layout from "../../layouts/Layout.astro";
-
-import one from "../../images/low_res/992 GT3RS - Airport/992 GT3RS, Simon, 2024.jpg";
-import two from "../../images/low_res/992 GT3RS - Airport/992 GT3RS, Simon, 2024-2.jpg";
-import three from "../../images/low_res/992 GT3RS - Airport/992 GT3RS, Simon, 2024-3.jpg";
-import four from "../../images/low_res/992 GT3RS - Airport/992 GT3RS, Simon, 2024-4.jpg";
-import five from "../../images/low_res/992 GT3RS - Airport/992 GT3RS, Simon, 2024-5.jpg";
-import six from "../../images/low_res/992 GT3RS - Airport/992 GT3RS, Simon, 2024-6.jpg";
-import seven from "../../images/low_res/992 GT3RS - Airport/992 GT3RS, Simon, 2024-7.jpg";
-
-import eight from "../../images/low_res/992 GT3RS - Airport/992 GT3RS, Simon, 2024-8.jpg";
-import nine from "../../images/low_res/992 GT3RS - Airport/992 GT3RS, Simon, 2024-16.jpg";
-import ten from "../../images/low_res/992 GT3RS - Airport/992 GT3RS, Simon, 2024-10.jpg";
-import eleven from "../../images/low_res/992 GT3RS - Airport/992 GT3RS, Simon, 2024-11.jpg";
-import twelve from "../../images/low_res/992 GT3RS - Airport/992 GT3RS, Simon, 2024-12.jpg";
-import thirteen from "../../images/low_res/992 GT3RS - Airport/992 GT3RS, Simon, 2024-13.jpg";
-
-import fourteen from "../../images/low_res/992 GT3RS - Airport/992 GT3RS, Simon, 2024-15.jpg";
-import fifteen from "../../images/low_res/992 GT3RS - Airport/992 GT3RS, Simon, 2024-14.jpg";
-import sixteen from "../../images/low_res/992 GT3RS - Airport/992 GT3RS, Simon, 2024-9.jpg";
-import seventeen from "../../images/low_res/992 GT3RS - Airport/992 GT3RS, Simon, 2024-17.jpg";
-import eighteen from "../../images/low_res/992 GT3RS - Airport/992 GT3RS, Simon, 2024-18.jpg";
-import nineteen from "../../images/low_res/992 GT3RS - Airport/992 GT3RS, Simon, 2024-19.jpg";
-
-import twenty from "../../images/low_res/992 GT3RS - Airport/992 GT3RS, Simon, 2024-20.jpg";
-import twenty1 from "../../images/low_res/992 GT3RS - Airport/992 GT3RS, Simon, 2024-21.jpg";
-import twenty2 from "../../images/low_res/992 GT3RS - Airport/992 GT3RS, Simon, 2024-22.jpg";
-import twenty3 from "../../images/low_res/992 GT3RS - Airport/992 GT3RS, Simon, 2024-23.jpg";
-import twenty4 from "../../images/low_res/992 GT3RS - Airport/992 GT3RS, Simon, 2024-24.jpg";
-import twenty5 from "../../images/low_res/992 GT3RS - Airport/992 GT3RS, Simon, 2024-25.jpg";
-import twenty6 from "../../images/low_res/992 GT3RS - Airport/992 GT3RS, Simon, 2024-26.jpg";
+import CarImages from "../../CarImages";
 ---
 
 <Layout title="992 GT3RS">
@@ -40,43 +10,7 @@ import twenty6 from "../../images/low_res/992 GT3RS - Airport/992 GT3RS, Simon, 
 
 	<div class="container">
 		<div class="row">
-			<div class="col">
-				<Image src={one} alt="one" />
-				<Image src={two} alt="two" />
-				<Image src={three} alt="three" />
-				<Image src={four} alt="four" />
-				<Image src={five} alt="five" />
-				<Image src={six} alt="six" />
-				<Image src={seven} alt="seven" />
-			</div>
-
-			<div class="col">
-				<Image src={eight} alt="eight" />
-				<Image src={nine} alt="nine" />
-				<Image src={ten} alt="ten" />
-				<Image src={eleven} alt="eleven" />
-				<Image src={twelve} alt="twelve" />
-				<Image src={thirteen} alt="thirteen" />
-			</div>
-
-			<div class="col">
-				<Image src={fourteen} alt="fourteen" />
-				<Image src={fifteen} alt="fifteen" />
-				<Image src={sixteen} alt="sixteen" />
-				<Image src={seventeen} alt="seventeen" />
-				<Image src={eighteen} alt="eighteen" />
-				<Image src={nineteen} alt="nineteen" />
-			</div>
-
-			<div class="col">
-				<Image src={twenty} alt="twenty" />
-				<Image src={twenty1} alt="twent1" />
-				<Image src={twenty2} alt="twenty2" />
-				<Image src={twenty3} alt="twenty3" />
-				<Image src={twenty4} alt="twenty4" />
-				<Image src={twenty5} alt="twenty5" />
-				<Image src={twenty6} alt="twenty6" />
-			</div>
+			<CarImages client:only bucketFolder="/cars/992 GT3RS - Airport" />
 		</div>
 	</div>
 

@@ -17,19 +17,21 @@
 	padding: 1rem;
 
 	.row {
-		display: flex;
+		/* display: flex; */
+		display: grid;
+		grid-template-columns: auto auto auto auto;
 		gap: 30px;
 
 		.col {
 			display: flex;
 			flex-direction: column;
 			gap: 30px;
+		}
 
-			img {
-				width: 100%;
-				max-width: 300px;
-				height: auto;
-			}
+		img {
+			width: 100%;
+			max-width: 300px;
+			height: auto;
 		}
 	}
 }

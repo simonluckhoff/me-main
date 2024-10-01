@@ -14,7 +14,7 @@ import recent9 from "./images/low_res/911 GT3/1 - 911 GT3, Simon, 2024-38.jpg";
 import recent10 from "./images/low_res/992 GT3/1 - 992 GT3, Simon, 2024-30.jpg";
 import recent11 from "./images/low_res/Pista Elana/1 - Pista - Elana, Simon, 2024-52.jpg";
 import recent12 from "./images/low_res/996 GT3/1 - 996 GT3, Simon, 2024-5.jpg";
-import recent13 from "./images/low_res/Conrad GTR /1 - GTR, Simon, 2024-21.jpg";
+import recent13 from "./images/low_res/Conrad GTR/1 - GTR, Simon, 2024-21.jpg";
 import recent14 from "./images/low_res/997 GT3RS/1 - 997 GT3RS, Simon, 2024.jpg";
 import recent15 from "./images/low_res/Akra GT3RS/1 - 991 GT3RS, Simon, 2024-36.jpg";
 import recent16 from "./images/low_res/Bentley NBR 9/1 - Bentley NBR 9, Simon, 2024-50.jpg";

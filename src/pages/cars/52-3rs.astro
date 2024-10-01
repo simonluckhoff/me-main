@@ -1,4 +1,5 @@
 ---
+import CarImages from "../../CarImages";
 import Layout from "../../layouts/Layout.astro";
 ---
 
@@ -10,29 +11,7 @@ import Layout from "../../layouts/Layout.astro";
 	<div class="gallery">
 		<div class="container">
 			<div class="row">
-				<div class="col">
-					<img src="../../images/3rs/GT3RS, Simon, 2023.JPG" />
-					<img src="../../images/3rs/GT3RS, Simon, 2023-2.JPG" />
-					<img src="../../images/3rs/GT3RS, Simon, 2023-15.JPG" />
-					<img src="../../images/3rs/GT3RS, Simon, 2023-4.JPG" />
-				</div>
-				<div class="col">
-					<img src="../../images/3rs/GT3RS, Simon, 2023-5.JPG" />
-					<img src="../../images/3rs/GT3RS, Simon, 2023-11.JPG" />
-					<img src="../../images/3rs/GT3RS, Simon, 2023-8.JPG" />
-					<img src="../../images/3rs/GT3RS, Simon, 2023-6.JPG" />
-				</div>
-				<div class="col">
-					<img src="../../images/3rs/GT3RS, Simon, 2023-7.JPG" />
-					<img src="../../images/3rs/GT3RS, Simon, 2023-9.JPG" />
-					<img src="../../images/3rs/GT3RS, Simon, 2023-10.JPG" />
-					<img src="../../images/3rs/GT3RS, Simon, 2023-12.JPG" />
-				</div>
-				<div class="col">
-					<img src="../../images/3rs/GT3RS, Simon, 2023-13.JPG" />
-					<img src="../../images/3rs/GT3RS, Simon, 2023-14.JPG" />
-					<img src="../../images/3rs/GT3RS, Simon, 2023-3.JPG" />
-				</div>
+				<CarImages client:only bucketFolder="/cars/3rs" />
 			</div>
 		</div>
 	</div>

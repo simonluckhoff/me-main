@@ -1,4 +1,5 @@
 ---
+import CarImages from "../../CarImages";
 import Layout from "../../layouts/Layout.astro";
 ---
 
@@ -10,48 +11,7 @@ import Layout from "../../layouts/Layout.astro";
 	<div class="gallery">
 		<div class="container">
 			<div class="row">
-				<div class="col">
-					<img src="../../images/low_res/Lotus/Lotus, Simon, 2024.jpg" />
-					<img src="../../images/low_res/Lotus/Lotus, Simon, 2024-2.jpg" />
-					<img src="../../images/low_res/Lotus/Lotus, Simon, 2024-3.jpg" />
-					<img src="../../images/low_res/Lotus/Lotus, Simon, 2024-4.jpg" />
-					<img src="../../images/low_res/Lotus/Lotus, Simon, 2024-5.jpg" />
-					<img src="../../images/low_res/Lotus/Lotus, Simon, 2024-6.jpg" />
-					<img src="../../images/low_res/Lotus/Lotus, Simon, 2024-7.jpg" />
-					<img src="../../images/low_res/Lotus/Lotus, Simon, 2024-8.jpg" />
-				</div>
-
-				<div class="col">
-					<img src="../../images/low_res/Lotus/Lotus, Simon, 2024-13.jpg" />
-					<img src="../../images/low_res/Lotus/Lotus, Simon, 2024-14.jpg" />
-					<img src="../../images/low_res/Lotus/Lotus, Simon, 2024-10.jpg" />
-					<img src="../../images/low_res/Lotus/Lotus, Simon, 2024-15.jpg" />
-					<img src="../../images/low_res/Lotus/Lotus, Simon, 2024-16.jpg" />
-					<img src="../../images/low_res/Lotus/Lotus, Simon, 2024-17.jpg" />
-					<img src="../../images/low_res/Lotus/Lotus, Simon, 2024-18.jpg" />
-					<img src="../../images/low_res/Lotus/Lotus, Simon, 2024-19.jpg" />
-				</div>
-
-				<div class="col">
-					<img src="../../images/low_res/Lotus/Lotus, Simon, 2024-20.jpg" />
-					<img src="../../images/low_res/Lotus/Lotus, Simon, 2024-21.jpg" />
-					<img src="../../images/low_res/Lotus/Lotus, Simon, 2024-22.jpg" />
-					<img src="../../images/low_res/Lotus/Lotus, Simon, 2024-9.jpg" />
-					<img src="../../images/low_res/Lotus/Lotus, Simon, 2024-23.jpg" />
-					<img src="../../images/low_res/Lotus/Lotus, Simon, 2024-24.jpg" />
-					<img src="../../images/low_res/Lotus/Lotus, Simon, 2024-25.jpg" />
-					<img src="../../images/low_res/Lotus/Lotus, Simon, 2024-26.jpg" />
-				</div>
-				<div class="col">
-					<img src="../../images/low_res/Lotus/Lotus, Simon, 2024-28.jpg" />
-					<img src="../../images/low_res/Lotus/Lotus, Simon, 2024-29.jpg" />
-					<img src="../../images/low_res/Lotus/Lotus, Simon, 2024-11.jpg" />
-					<img src="../../images/low_res/Lotus/Lotus, Simon, 2024-30.jpg" />
-					<img src="../../images/low_res/Lotus/Lotus, Simon, 2024-31.jpg" />
-					<img src="../../images/low_res/Lotus/Lotus, Simon, 2024-34.jpg" />
-					<img src="../../images/low_res/Lotus/Lotus, Simon, 2024-35.jpg" />
-					<img src="../../images/low_res/Lotus/Lotus, Simon, 2024-12.jpg" />
-				</div>
+				<CarImages client:only bucketFolder="/cars/Lotus" />
 			</div>
 		</div>
 	</div>
