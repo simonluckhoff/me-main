@@ -79,12 +79,12 @@
 	});
 
 	function hideNavigationBar() {
-		const navigationBar = document.querySelector(".mobile-navigation-menu");
+		const navigationBar = document.querySelector(".mobile-navigation-menu") as HTMLElement;
 		if (navigationBar) if (navigationBar) navigationBar.style.display = "none";
 	}
 
 	function showNavigationBar() {
-		const navigationBar = document.querySelector(".mobile-navigation-menu");
+		const navigationBar = document.querySelector(".mobile-navigation-menu") as HTMLElement;
 		if (navigationBar) if (navigationBar) navigationBar.style.display = "flex";
 	}
 </script>
