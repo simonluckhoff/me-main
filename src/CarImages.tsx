@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { storage } from "./firebase";
 import { ref, listAll } from "firebase/storage";
+import { Grid } from "react-loader-spinner";
+import "./styles/gridLoader.css";
 
 interface Props {
 	bucketFolder: string;
@@ -9,6 +11,7 @@ interface Props {
 export default function CarImages({ bucketFolder }: Props) {
 	const [photoUrls, setPhotoUrls] = useState<string[]>([]);
 	const [error, setError] = useState<undefined | string>();
+	const [displayReady, setDisplayReady] = useState(false);
 
 	useEffect(() => {
 		getImages();
@@ -61,6 +64,7 @@ export default function CarImages({ bucketFolder }: Props) {
 					photoUrls.push(url);
 				});
 				setPhotoUrls(photoUrls);
+				setDisplayReady(true);
 			})
 			.catch((error) => {
 				console.error(`Error getting images for ${bucketFolder}:`, error);
@@ -74,4 +78,17 @@ export default function CarImages({ bucketFolder }: Props) {
 			return <img key={url} src={url} />;
 		});
 	}
+
+	return (
+		<Grid
+			visible={true}
+			height="50"
+			width="50"
+			color="#4fa94d"
+			ariaLabel="grid-loading"
+			radius="12.5"
+			wrapperStyle={{}}
+			wrapperClass="grid-wrapper"
+		/>
+	);
 }
